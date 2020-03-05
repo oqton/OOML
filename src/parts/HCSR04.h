@@ -31,9 +31,11 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
-#include <components/Cube.h>
-#include <parts/USSensor.h>
+#include "../core/AbstractPart.h"
+#include "../components/Cube.h"
+#include "../parts/USSensor.h"
+
+namespace ooml {
 
 /**
  * \brief Seeed Ultrasonic Sensor Model
@@ -59,5 +61,7 @@ public:
 	*/
   virtual ~HCSR04USSensor() {}
 };
+
+} // end namespace
 
 #endif

@@ -17,12 +17,16 @@
 *
 */
 
-#include <core/IndentWriter.h>
+#include "IndentWriter.h"
 
 #include <sstream>
+
+namespace ooml {
 
 std::ostream& operator<<(std::ostream& os, IndentWriter const& writer)
 {
 	writer.dump(os);
 	return os;
 }
+
+} // end namespace

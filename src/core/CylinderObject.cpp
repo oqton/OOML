@@ -22,6 +22,8 @@
 
 #include <iostream>
 
+namespace ooml {
+
 void CylinderObject::genScad(IndentWriter& writer) const
 {
     writer << "cylinder(h=" << _height <<", r1=" << _radius1 <<", r2=" << _radius2 << ", $fn=" << _faces
@@ -32,3 +34,5 @@ void CylinderObject::printAst(IndentWriter& writer) const
 {
     writer << "// CYLINDER(" << _height << ", " << _radius1 << ", " << _radius2 << ", " << _faces << ", " << _center << ")" << std::endl;
 }
+
+} // end namespace

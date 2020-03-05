@@ -30,9 +30,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/Component.h>
+#include "Component.h"
 
 #define PART_MARGIN 0.1
+
+namespace ooml {
 
 class IndentWriter;
 
@@ -135,5 +137,7 @@ private:
 	 */
 	AbstractPart & operator=(AbstractPart const& other);
 };
+
+} // end namespace
 
 #endif // ABSTRACTPART_H_INCLUDED

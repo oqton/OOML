@@ -30,7 +30,9 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief Toroid primitive object
@@ -88,5 +90,7 @@ private:
   double _sectionRadius; /** Radius of toroid's section. */
   unsigned int _faces; /** Number of faces of the rendered toroid. */
 };
+
+} // end namespace
 
 #endif // TOROID_H_INCLUDED

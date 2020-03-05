@@ -46,6 +46,8 @@
 
 #define COMPONENT_MARGIN 0.05
 
+namespace ooml {
+
 /**
  * \brief Component class.
  *
@@ -585,5 +587,6 @@ public:
 };
 
 
+} // end namespace
 
 #endif // COMPONENT_H_INCLUDED

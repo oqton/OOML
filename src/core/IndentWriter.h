@@ -34,6 +34,8 @@
 #include <sstream>
 #include <string>
 
+namespace ooml {
+
 /**
  * \brief Indented output writer.
  *
@@ -208,5 +210,7 @@ private:
  * \return The parameter stream to allow chained insertions.
  */
 OOMLCore_EXP_DEC std::ostream& operator<<(std::ostream & os, IndentWriter const& writer);
+
+} // end namespace
 
 #endif // INDENTWRITER_H_INCLUDED

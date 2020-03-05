@@ -31,7 +31,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief Arduino UNO Bounding Box
@@ -87,5 +89,7 @@ private:
   double _drills_height;
   bool _fourth_drill;
 };
+
+} // end namespace
 
 #endif // ARDUINOUNO_H_INCLUDED

@@ -30,10 +30,12 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
-#include <core/ObjectDecorator.h>
-#include <core/SharedPtr.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+#include "ObjectDecorator.h"
+#include "SharedPtr.h"
+
+namespace ooml {
 
 /**
  * \brief Minkowski decorator.
@@ -125,5 +127,7 @@ private:
 	SharedPtr<AbstractObject> _reference;  /** Minkowski reference object. */
   unsigned int _faces; /** Number of faces to render. */
 };
+
+} // end namespace
 
 #endif // MINKOWSKIDECORATOR_H_INCLUDED

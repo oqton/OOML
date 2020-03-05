@@ -20,6 +20,8 @@
 #include "RotMatrix.h"
 #include "Math.h"
 
+namespace ooml {
+
 RotationalMatrix RotationalMatrix::getInv() const{
     RotationalMatrix inv;
 
@@ -114,3 +116,5 @@ void RotationalMatrix::rotateZ(double z){
     *this = *this * rotation;
 
 }
+
+} // end namespace

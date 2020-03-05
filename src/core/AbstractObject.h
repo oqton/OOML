@@ -39,6 +39,8 @@
 #include <string>
 #include <vector>
 
+namespace ooml {
+
 typedef std::vector<RefSys> Links;
 
 /**
@@ -208,5 +210,7 @@ private:
  * \return The parameter writer to allow chained insertions.
  */
 OOMLCore_EXP_DEC IndentWriter& operator<<(IndentWriter & writer, AbstractObject const& object);
+
+} // end namespace
 
 #endif // ABSTRACTOBJECT_H_INCLUDED

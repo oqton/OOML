@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <parts/SimpleWheel.h>
+#include "../parts/SimpleWheel.h"
+
+namespace ooml {
 
 /**
  * \brief Servo wheel primitive object
@@ -89,5 +91,7 @@ private:
 	double _servoRadius; /** Servo's piece radius. */
 	double _servoThickness; /** Servo's piece thickness. */
 };
+
+} // end namespace
 
 #endif // SERVOWHEEL_H_INCLUDED

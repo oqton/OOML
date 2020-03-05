@@ -30,10 +30,12 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <components/Cube.h>
-#include <components/Cylinder.h>
-#include <core/Union.h>
-#include <core/Difference.h>
+#include "Cube.h"
+#include "Cylinder.h"
+#include "../core/Union.h"
+#include "../core/Difference.h"
+
+namespace ooml {
 
 /**
  * \brief Rounded tablet primitive object
@@ -112,5 +114,7 @@ public:
     set(round_box.get());
 	}
 };
+
+} // end namespace
 
 #endif // ROUNDEDTABLET_H_INCLUDED

@@ -34,6 +34,8 @@
 #include "Matrix.h"
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief Rotational Matrix
  *
@@ -127,5 +129,7 @@ public:
     RotationalMatrix getInv() const;
 
 };
+
+} // end namespace
 
 #endif // REFSYS_H_INCLUDED

@@ -30,12 +30,14 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <components/Cylinder.h>
-#include <components/Sphere.h>
-#include <components/Toroid.h>
-#include <core/MinkowskiDecorator.h>
-#include <core/Union.h>
-#include <core/Difference.h>
+#include "Cylinder.h"
+#include "Sphere.h"
+#include "Toroid.h"
+#include "../core/MinkowskiDecorator.h"
+#include "../core/Union.h"
+#include "../core/Difference.h"
+
+namespace ooml {
 
 /**
  * \brief Rounded cylinder primitive object
@@ -134,5 +136,7 @@ public:
 	}
 };
 
+
+} // end namespace
 
 #endif // ROUNDEDCYLINDER_H_INCLUDED

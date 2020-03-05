@@ -31,9 +31,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/Component.h>
-#include <core/IndentWriter.h>
+#include "AbstractObject.h"
+#include "Component.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 /**
  * \brief Cylinder primitive object
@@ -158,5 +160,7 @@ private:
     unsigned int _faces; /** Number of faces of the rendered cylinder. */
     bool _center; /** Centered cylinder flag. */
 };
+
+} // end namespace
 
 #endif // CYLINDER_H_INCLUDED

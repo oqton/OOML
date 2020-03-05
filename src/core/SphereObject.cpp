@@ -22,6 +22,8 @@
 
 #include <iostream>
 
+namespace ooml {
+
 void SphereObject::genScad(IndentWriter& writer) const
 {
     writer << "sphere(r=" << _radius << ", $fn=" << _faces
@@ -32,3 +34,5 @@ void SphereObject::printAst(IndentWriter& writer) const
 {
     writer << "// SPHERE(" << _radius << ", " << _faces << ", " << _center << ")" << std::endl;
 }
+
+} // end namespace

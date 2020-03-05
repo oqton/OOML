@@ -30,8 +30,10 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 /**
  * \brief Generic vector primitive object.
@@ -196,5 +198,7 @@ void Vector<T>::printAst(IndentWriter& writer) const
   _normal.printAst(writer);
 	writer << "]";
 }
+
+} // end namespace
 
 #endif // VECTOR_H_INCLUDED

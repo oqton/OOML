@@ -20,6 +20,8 @@
 #include "TransformMatrix.h"
 #include "Math.h"
 
+namespace ooml {
+
 TransformMatrix TransformMatrix::getInv() const {
     TransformMatrix inv;
 
@@ -219,3 +221,4 @@ void TransformMatrix::relTranslate(double x, double y, double z){
     *this = *this * translation;
 }
 
+} // end namespace

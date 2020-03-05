@@ -24,6 +24,8 @@
 #include "../core/Union.h"
 
 
+namespace ooml {
+
 String::String(string cad, double font_size, double spacing, double height) :
     Component()
 {
@@ -45,3 +47,5 @@ String::String(string cad, double font_size, double spacing, double height) :
 
     set(comp.get());
 }
+
+} // end namespace

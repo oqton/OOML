@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/ScaleDecorator.h>
-#include <core/IndentWriter.h>
+#include "ScaleDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void ScaleDecorator::genScad(IndentWriter& writer) const
 {
@@ -35,3 +37,5 @@ void ScaleDecorator::printAst(IndentWriter& writer) const
 	writer << "SCALE(" << _sx << ", " << _sy << ", " << _sz << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

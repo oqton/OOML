@@ -30,9 +30,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/ObjectDecorator.h>
-#include <core/IndentWriter.h>
-#include <core/SharedPtr.h>
+#include "ObjectDecorator.h"
+#include "IndentWriter.h"
+#include "SharedPtr.h"
+
+namespace ooml {
 
 /**
  * \brief Color decorator.
@@ -134,5 +136,7 @@ private:
 	double _b; /** Blue component of the color. */
 	double _a; /** Alpha component of the color. */
 };
+
+} // end namespace
 
 #endif // COLORDECORATOR_H_INCLUDED

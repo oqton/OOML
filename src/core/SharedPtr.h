@@ -22,6 +22,8 @@
 
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief Object pointer.
  *
@@ -272,6 +274,6 @@ private:
 };
 
 
-
+} // end namespace
 
 #endif // SHAREDPTR_H_INCLUDED

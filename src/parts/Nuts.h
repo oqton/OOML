@@ -33,7 +33,7 @@
 
 #include "../core.h"
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
 
 #ifdef WIN32
 #ifdef OOMLParts_EXPORTS
@@ -44,6 +44,8 @@
 #else
 #define OOMLParts_EXP_DEC
 #endif
+
+namespace ooml {
 
 enum Metric{M3,M4,M5,M6,M8};
 
@@ -89,5 +91,7 @@ private:
 };
 
 
+
+} // end namespace
 
 #endif

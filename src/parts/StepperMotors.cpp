@@ -21,6 +21,8 @@
 #include "../core.h"
 #include "../components.h"
 
+namespace ooml {
+
 StepperMotor::StepperMotor(StepperMotorType type):AbstractPart(){
     switch(type){
     case Nema17:
@@ -54,3 +56,5 @@ Component StepperMotor::build(){
     motor.translate(0,0,-data.z_dim_body/2);
     return motor;
 }
+
+} // end namespace

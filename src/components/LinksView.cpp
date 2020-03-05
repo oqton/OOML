@@ -26,6 +26,8 @@
 
 #include <iostream>
 
+namespace ooml {
+
 Component LinksView::genComponent()
 {
     CompositeComponent linksview = Union::create();
@@ -36,3 +38,5 @@ Component LinksView::genComponent()
 
     return linksview;
 }
+
+} // end namespace

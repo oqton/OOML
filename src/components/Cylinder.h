@@ -34,6 +34,8 @@
 #include "../core/Component.h"
 #include "../core/IndentWriter.h"
 
+namespace ooml {
+
 /**
  * \brief Cylinder primitive object
  *
@@ -150,5 +152,7 @@ private:
 	unsigned int _faces; /** Number of faces of the rendered cylinder. */
 	bool _center; /** Centered cylinder flag. */
 };
+
+} // end namespace
 
 #endif // CYLINDER_H_INCLUDED

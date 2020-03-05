@@ -37,6 +37,8 @@
 #include "SharedPtr.h"
 #include "TransformMatrix.h"
 
+namespace ooml {
+
 /**
  * \brief Translate decorator.
  *
@@ -161,5 +163,7 @@ private:
 
     TransformMatrix _tr; //!< Homogenous Transformation Matrix (includes rotations and translations)
 };
+
+} // end namespace
 
 #endif // TRANSFORMDECORATOR_H_INCLUDED

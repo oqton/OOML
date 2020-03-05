@@ -38,6 +38,8 @@ using namespace std;
 #include "../core/DXFLinearExtrude.h"
 #include "../core/AbstractPart.h"
 
+namespace ooml {
+
 /**
  * \brief Extruded Char primitive object
  *
@@ -67,5 +69,7 @@ public:
 private:
     Data data;
 };
+
+} // end namespace
 
 #endif // CHAR_H

@@ -17,12 +17,14 @@
 *
 */
 
-#include <parts/NineVoltBattery.h>
-#include <components/Cube.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
-#include <components/RoundedTablet.h>
-#include <core/Union.h>
+#include "NineVoltBattery.h"
+#include "../components/Cube.h"
+#include "../components/Cylinder.h"
+#include "../core/Difference.h"
+#include "../components/RoundedTablet.h"
+#include "../core/Union.h"
+
+namespace ooml {
 
 Component NineVoltBattery::build()
 {
@@ -41,3 +43,5 @@ Component NineVoltBattery::build()
 
 	 return battery;
 }
+
+} // end namespace

@@ -30,9 +30,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/Component.h>
-#include <core/LinearExtrudeDecorator.h>
-#include <core/RotateExtrudeDecorator.h>
+#include "Component.h"
+#include "LinearExtrudeDecorator.h"
+#include "RotateExtrudeDecorator.h"
+
+namespace ooml {
 
 /**
  * \brief 2D component class.
@@ -102,5 +104,7 @@ public:
 		return Component(RotateExtrudeDecorator::create(get(), convexity, faces));
 	}
 };
+
+} // end namespace
 
 #endif // COMPONENT2D_H_INCLUDED

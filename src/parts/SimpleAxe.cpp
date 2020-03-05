@@ -17,10 +17,14 @@
 *
 */
 
-#include <parts/SimpleAxe.h>
-#include <components/Cylinder.h>
+#include "SimpleAxe.h"
+#include "../components/Cylinder.h"
+
+namespace ooml {
 
 Component SimpleAxe::build()
 {
 	return Cylinder(_radius, _length);
 }
+
+} // end namespace

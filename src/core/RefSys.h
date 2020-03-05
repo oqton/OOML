@@ -36,6 +36,8 @@
 
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief 3D point primitive object
  *
@@ -186,5 +188,7 @@ private:
     TransformMatrix _trans;
 
 };
+
+} // end namespace
 
 #endif // REFSYS_H_INCLUDED

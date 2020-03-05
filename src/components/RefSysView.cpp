@@ -24,6 +24,8 @@
 
 #include <iostream>
 
+namespace ooml {
+
 Component RefSysView::genComponent()
 {
     Component x_axis = Cylinder(0.5,7,10,false)
@@ -51,3 +53,5 @@ Component RefSysView::genComponent()
 
     return refsysview;
 }
+
+} // end namespace

@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief Futaba S3003 Bounding Box
@@ -88,5 +90,7 @@ private:
   bool _cable_hole;
   int _type;
 };
+
+} // end namespace
 
 #endif // FUTABAS3003_H_INCLUDED

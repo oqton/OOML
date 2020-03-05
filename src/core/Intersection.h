@@ -30,10 +30,12 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/CompositeComponent.h>
-#include <core/CompositeObject.h>
-#include <core/IndentWriter.h>
+#include "AbstractObject.h"
+#include "CompositeComponent.h"
+#include "CompositeObject.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 /**
  * \brief Intersection object.
@@ -130,5 +132,7 @@ private:
 };
 
 OOMLCore_EXP_DEC Component operator*(Component const& lhs, Component const& rhs);
+
+} // end namespace
 
 #endif // INTERSECTION_H_INCLUDED

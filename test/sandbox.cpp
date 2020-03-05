@@ -7,6 +7,7 @@
 #include <fstream>
 
 using namespace std;
+using namespace ooml;
 
 int main(int argc, char **argv)
 {

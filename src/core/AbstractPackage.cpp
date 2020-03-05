@@ -17,11 +17,13 @@
 *
 */
 
-#include <core/AbstractPackage.h>
-#include <core/IndentWriter.h>
+#include "AbstractPackage.h"
+#include "IndentWriter.h"
 
 #include <fstream>
 #include <string>
+
+namespace ooml {
 
 void AbstractPackage::genScadFiles() const
 {
@@ -38,3 +40,5 @@ void AbstractPackage::genScadFiles() const
 		}
 	}
 }
+
+} // end namespace

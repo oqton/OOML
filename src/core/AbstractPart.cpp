@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/AbstractPart.h>
-#include <core/IndentWriter.h>
+#include "AbstractPart.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void AbstractPart::genScad(IndentWriter& writer) const
 {
@@ -29,3 +31,5 @@ void AbstractPart::printAst(IndentWriter& writer) const
 {
 	Component::printAst(writer);
 }
+
+} // end namespace

@@ -21,6 +21,8 @@
 #include "config.h"
 #include <fstream>
 
+namespace ooml {
+
 Char::Char(char character, double font_size, double height) :
     Component()
 {
@@ -121,3 +123,5 @@ Char::Char(char character, double font_size, double height) :
         }
     }
 }
+
+} // end namespace

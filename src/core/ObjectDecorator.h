@@ -30,9 +30,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
-#include <core/SharedPtr.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+#include "SharedPtr.h"
+
+namespace ooml {
 
 /**
  * \brief Abstract object decorator interface.
@@ -128,5 +130,7 @@ private:
 
 	SharedPtr<AbstractObject> _decorated; /** Object pointer to the decorated object. */
 };
+
+} // end namespace
 
 #endif // OBJECTDECORATOR_H_INCLUDED

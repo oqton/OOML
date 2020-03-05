@@ -30,8 +30,10 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
 
+
+namespace ooml {
 
 /**
  * \brief Battery holder primitive object
@@ -106,5 +108,7 @@ private:
   int _number; /** Batteries' number. */
   int _type; /** Battery's type. */
 };
+
+} // end namespace
 
 #endif // BATTERYHOLDER_H_INCLUDED

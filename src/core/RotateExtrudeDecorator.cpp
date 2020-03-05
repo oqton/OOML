@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/RotateExtrudeDecorator.h>
-#include <core/IndentWriter.h>
+#include "RotateExtrudeDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void RotateExtrudeDecorator::genScad(IndentWriter& writer) const
 {
@@ -35,3 +37,5 @@ void RotateExtrudeDecorator::printAst(IndentWriter& writer) const
   writer << "// ROTATE_EXTRUDE(" << _convexity << ", " << _faces << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

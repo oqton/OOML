@@ -34,6 +34,8 @@
 #include "../core/Component.h"
 #include "../core/IndentWriter.h"
 
+namespace ooml {
+
 /**
  * \brief Cube primitive object
  *
@@ -136,5 +138,7 @@ private:
 	double _sz; /** Cube dimension in the z axis. */
 	bool _center; /** Centered cube flag. */
 };
+
+} // end namespace
 
 #endif // CUBE_H_INCLUDED

@@ -17,10 +17,12 @@
 *
 */
 
-#include <components/Circle.h>
-#include <core/IndentWriter.h>
+#include "Circle.h"
+#include "../core/IndentWriter.h"
 
 #include <iostream>
+
+namespace ooml {
 
 void Circle::genScad(IndentWriter& writer) const
 {
@@ -31,3 +33,5 @@ void Circle::printAst(IndentWriter& writer) const
 {
 	writer << "// CIRCLE(" << _radius << ", " << _faces << ")" << std::endl;
 }
+
+} // end namespace

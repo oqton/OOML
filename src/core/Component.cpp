@@ -24,6 +24,8 @@
 #include "RotMatrix.h"
 #include "Union.h"
 
+namespace ooml {
+
 Component & Component::moveToLink(const Component & base, int link_id){
 
     RefSys link = base.getLink(link_id);
@@ -242,3 +244,4 @@ Component & Component::relTranslate(double tx, double ty, double tz)
     return *this;
 }
 
+} // end namespace

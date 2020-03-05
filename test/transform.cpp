@@ -8,6 +8,8 @@
 #include <core/TransformDecorator.h>
 #include <parts.h>
 
+using namespace ooml;
+
 int main(int argc, char **argv)
 {
     std::ofstream file("transform.scad");

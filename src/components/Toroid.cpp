@@ -17,9 +17,11 @@
 *
 */
 
-#include <components/Toroid.h>
-#include <components/Circle.h>
-#include <core/Component2D.h>
+#include "Toroid.h"
+#include "Circle.h"
+#include "../core/Component2D.h"
+
+namespace ooml {
 
 Component Toroid::build()
 {
@@ -27,3 +29,5 @@ Component Toroid::build()
       .translate(_toroidRadius, 0.0, 0.0));
   return circle.rotateExtrudedCopy(10, _faces);
 }
+
+} // end namespace

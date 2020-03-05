@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/ObjectDecorator.h>
-#include <core/IndentWriter.h>
+#include "ObjectDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void ObjectDecorator::genScad(IndentWriter& writer) const
 {
@@ -51,4 +53,6 @@ Links ObjectDecorator::getLinks() const{
     else
         return Links(0);
 }
+
+} // end namespace
 

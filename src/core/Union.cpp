@@ -17,10 +17,12 @@
 *
 */
 
-#include <core/Union.h>
-#include <core/IndentWriter.h>
+#include "Union.h"
+#include "IndentWriter.h"
 
 #include <iostream>
+
+namespace ooml {
 
 Links Union::getLinks() const {
     //std::cout << "I am here" << std::endl;
@@ -79,3 +81,5 @@ Component operator+(Component const& lhs, Component const& rhs)
 	 result << lhs.get() << rhs.get();
 	 return result;
 }
+
+} // end namespace

@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/Polygon2D.h>
-#include <core/IndentWriter.h>
+#include "Polygon2D.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void Polygon2D::IndexedPath::genScad(IndentWriter& writer) const
 {
@@ -63,3 +65,5 @@ void Polygon2D::printAst(IndentWriter& writer) const
   _path.printAst(writer);
 	writer << ")" << std::endl;
 }
+
+} // end namespace

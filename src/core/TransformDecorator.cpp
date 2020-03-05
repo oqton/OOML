@@ -20,6 +20,8 @@
 #include "TransformDecorator.h"
 #include "IndentWriter.h"
 
+namespace ooml {
+
 RefSys TransformDecorator::getRefSys() const{
 
     if (hasRefSys()){
@@ -86,3 +88,5 @@ void TransformDecorator::printAst(IndentWriter& writer) const
     writer << "TRANSLATE(" << x << ", " << y << ", " << z << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

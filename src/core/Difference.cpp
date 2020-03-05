@@ -17,10 +17,12 @@
 *
 */
 
-#include <core/Difference.h>
-#include <core/IndentWriter.h>
+#include "Difference.h"
+#include "IndentWriter.h"
 
 #include <iostream>
+
+namespace ooml {
 
 void Difference::genScad(IndentWriter& writer) const
 {
@@ -47,3 +49,5 @@ Component operator-(Component const& lhs, Component const& rhs)
   result << lhs.get() << rhs.get();
   return result;
 }
+
+} // end namespace

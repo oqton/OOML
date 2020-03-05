@@ -8,6 +8,8 @@
 
 #include <iostream>
 
+using namespace ooml;
+
 int main(int argc, char **argv)
 {
   IndentWriter writer;

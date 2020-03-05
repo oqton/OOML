@@ -38,6 +38,8 @@
 
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief 3D point primitive object
  *
@@ -88,5 +90,7 @@ private:
   RefSys _refSys;
   Component genComponent();
 };
+
+} // end namespace
 
 #endif // OOML_REFSYSIEW_H_INCLUDED

@@ -22,6 +22,8 @@
 
 #include <iostream>
 
+namespace ooml {
+
 void CubeObject::genScad(IndentWriter& writer) const
 {
     writer << "cube(size=[" << _sx << ", " << _sy << ", " << _sz << "], center=" << _center << ");" << std::endl;
@@ -31,3 +33,5 @@ void CubeObject::printAst(IndentWriter& writer) const
 {
     writer << "// CUBE(" << _sx << ", " << _sy << ", " << _sz << ", " << _center << ")" << std::endl;
 }
+
+} // end namespace

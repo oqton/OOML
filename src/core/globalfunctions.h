@@ -30,6 +30,8 @@
 #define OOMLCore_EXP_DEC
 #endif
 
+namespace ooml {
+
 class Component;
 
 /**
@@ -43,6 +45,8 @@ class Component;
   */
 OOMLCore_EXP_DEC Component& attach(Component&  base, int link_base, Component& attachment, int link_attach=0);
 
+
+} // end namespace
 
 
 #endif // OOML_GLOBAL_FUNCTIONS_H_INCLUDED

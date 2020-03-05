@@ -30,12 +30,14 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/Component.h>
-#include <core/CompositeObject.h>
-#include <core/IndentWriter.h>
+#include "Component.h"
+#include "CompositeObject.h"
+#include "IndentWriter.h"
 
 #include <algorithm>
 #include <vector>
+
+namespace ooml {
 
 /**
  * \brief Composite component interface.
@@ -150,5 +152,7 @@ private:
 
 
 };
+
+} // end namespace
 
 #endif // COMPOSITECOMPONENT_H_INCLUDED

@@ -30,11 +30,13 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
 
 #include <map>
 #include <vector>
+
+namespace ooml {
 
 /**
  * \brief Point to index map.
@@ -193,5 +195,7 @@ void PointIndexMap<T>::printAst(IndentWriter& writer) const
 	}
 	writer << "]";
 }
+
+} // end namespace
 
 #endif // POINTINDEXMAP_H_INCLUDED

@@ -39,6 +39,8 @@ using namespace std;
 #include "../core/AbstractPart.h"
 #include "Char.h"
 
+namespace ooml {
+
 /**
  * \brief Extruded Char primitive object
  *
@@ -69,5 +71,7 @@ public:
 private:
     Data data;
 };
+
+} // end namespace
 
 #endif // CHAR_H

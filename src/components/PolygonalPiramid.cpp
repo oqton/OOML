@@ -17,10 +17,12 @@
 *
 */
 
-#include <components/PolygonalPiramid.h>
-#include <core/Point2D.h>
-#include <core/Polygon.h>
-#include <core/Polyhedron.h>
+#include "PolygonalPiramid.h"
+#include "../core/Point2D.h"
+#include "../core/Polygon.h"
+#include "../core/Polyhedron.h"
+
+namespace ooml {
 
 Component PolygonalPiramid::build()
 {
@@ -48,3 +50,5 @@ Component PolygonalPiramid::build()
 	
 	return component;
 }
+
+} // end namespace

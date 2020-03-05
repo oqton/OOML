@@ -30,15 +30,17 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <components/PolygonalPrism.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
-#include <core/Intersection.h>
-#include <core/Math.h>
-#include <core/Point2D.h>
-#include <core/Polygon.h>
+#include "PolygonalPrism.h"
+#include "Cylinder.h"
+#include "../core/Difference.h"
+#include "../core/Intersection.h"
+#include "../core/Math.h"
+#include "../core/Point2D.h"
+#include "../core/Polygon.h"
 
 #include <math.h>
+
+namespace ooml {
 
 /**
  * \brief Regular base prism primitive object
@@ -79,6 +81,8 @@ public:
         set(object.get());
 	}
 };
+
+} // end namespace
 
 
 #endif

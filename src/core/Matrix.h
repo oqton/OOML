@@ -30,12 +30,14 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-//#include <core/AbstractObject.h>
-//#include <core/IndentWriter.h>
+//#include "AbstractObject.h"
+//#include "IndentWriter.h"
 
 #include <algorithm>
 #include <vector>
 #include <iostream>
+
+namespace ooml {
 
 /**
  * \brief Generic matrix primitive object
@@ -159,5 +161,7 @@ protected:
 	ElementsVector _elements; /** Matrix elements. row by row. */
     unsigned int _rows,_cols;
 };
+
+} // end namespace
 
 #endif // MATRIX_H_INCLUDED

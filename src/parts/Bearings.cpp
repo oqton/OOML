@@ -33,6 +33,8 @@
 #include "Bearings.h"
 #include "../components.h"
 
+namespace ooml {
+
 LMXuu::LMXuu(LinearBearings type):AbstractPart()
 {
     switch(type){
@@ -91,3 +93,5 @@ Component B624zz::build(){
             ;
     return bearing;
 }
+
+} // end namespace

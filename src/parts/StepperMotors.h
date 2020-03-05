@@ -17,11 +17,11 @@
 *
 */
 #ifndef OOML_STEPPERMOTOR_H
-#define OOML_STEPPERMOTOR_H_H
+#define OOML_STEPPERMOTOR_H
 
 #include "../core.h"
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
 
 #ifdef WIN32
 #ifdef OOMLParts_EXPORTS
@@ -32,6 +32,8 @@
 #else
 #define OOMLParts_EXP_DEC
 #endif
+
+namespace ooml {
 
 enum StepperMotorType{Nema17};
 
@@ -77,5 +79,7 @@ private:
     Data data;
 };
 
+
+} // end namespace
 
 #endif

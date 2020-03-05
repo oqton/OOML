@@ -30,9 +30,11 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/Component2D.h>
-#include <core/IndentWriter.h>
+#include "../core/AbstractObject.h"
+#include "../core/Component2D.h"
+#include "../core/IndentWriter.h"
+
+namespace ooml {
 
 /**
  * \brief Circle primitive object
@@ -107,5 +109,7 @@ private:
 	unsigned int _faces; /** Circle faces number. */
 };
 
+
+} // end namespace
 
 #endif // CIRCLE_H_INCLUDED

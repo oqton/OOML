@@ -30,8 +30,10 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
-#include <components/Cube.h>
+#include "../core/AbstractPart.h"
+#include "../components/Cube.h"
+
+namespace ooml {
 
 /**
  * \brief Nine volt Battery Model
@@ -81,5 +83,7 @@ protected:
 
   Data _data;
 };
+
+} // end namespace
 
 #endif // NINEVOLT_H_INCLUDED

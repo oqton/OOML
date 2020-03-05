@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief Generic Servo Model
@@ -120,5 +122,7 @@ protected:
     virtual Component build();
 
 };
+
+} // end namespace
 
 #endif // OOML_GENERIC_SERVO_H_INCLUDED

@@ -30,9 +30,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
-#include <core/SharedPtr.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+#include "SharedPtr.h"
+
+namespace ooml {
 
 /**
  * \brief Linear extrude from DXF filename.
@@ -127,5 +129,7 @@ private:
   unsigned int _convexity;
   unsigned int _faces;
 };
+
+} // end namespace
 
 #endif // DXFROTATEEXTRUDE_H_INCLUDED

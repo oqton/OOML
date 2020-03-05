@@ -30,11 +30,13 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
 #include <math.h>
 
 #include <utility>
+
+namespace ooml {
 
 /**
  * \brief 2D point primitive object
@@ -227,5 +229,7 @@ private:
 	double _x; /** Point position in the x axis. */
 	double _y; /** Point position in the y axis. */
 };
+
+} // end namespace
 
 #endif // POINT2D_H_INCLUDED

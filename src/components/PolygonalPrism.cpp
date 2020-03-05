@@ -17,11 +17,13 @@
 *
 */
 
-#include <components/PolygonalPrism.h>
-#include <core/Point2D.h>
-#include <core/Polygon.h>
-#include <core/Polygon2D.h>
-#include <core/Polyhedron.h>
+#include "PolygonalPrism.h"
+#include "../core/Point2D.h"
+#include "../core/Polygon.h"
+#include "../core/Polygon2D.h"
+#include "../core/Polyhedron.h"
+
+namespace ooml {
 
 Component PolygonalPrism::build()
 {
@@ -82,3 +84,5 @@ Component PolygonalPrism::build()
     return component;
 */
 }
+
+} // end namespace

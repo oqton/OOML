@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/Polyhedron.h>
-#include <core/IndentWriter.h>
+#include "Polyhedron.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void Polyhedron::IndexedTriangle3D::genScad(IndentWriter& writer) const
 {
@@ -59,3 +61,5 @@ void Polyhedron::printAst(IndentWriter& writer) const
 	}
 	writer << "])" << std::endl;
 }
+
+} // end namespace

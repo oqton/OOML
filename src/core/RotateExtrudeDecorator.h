@@ -30,10 +30,12 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
-#include <core/ObjectDecorator.h>
-#include <core/SharedPtr.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+#include "ObjectDecorator.h"
+#include "SharedPtr.h"
+
+namespace ooml {
 
 /**
  * \brief Translate decorator.
@@ -125,5 +127,7 @@ private:
   unsigned int _convexity; /** Maximum number of ray intersecting faces. */
   unsigned int _faces; /** Number of faces to render. */
 };
+
+} // end namespace
 
 #endif // ROTATEEXTRUDEDECORATOR_H_INCLUDED

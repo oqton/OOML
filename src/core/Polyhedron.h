@@ -30,17 +30,19 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/Component.h>
-#include <core/IndentWriter.h>
-#include <core/Point3D.h>
-#include <core/PointIndexMap.h>
-#include <core/SharedPtr.h>
-#include <core/Triangle3D.h>
+#include "AbstractObject.h"
+#include "Component.h"
+#include "IndentWriter.h"
+#include "Point3D.h"
+#include "PointIndexMap.h"
+#include "SharedPtr.h"
+#include "Triangle3D.h"
 
 #include <algorithm>
 #include <map>
 #include <vector>
+
+namespace ooml {
 
 /**
  * \brief Polyhedron primitive object
@@ -334,5 +336,7 @@ private:
 	PointIndexMap<Point3D> _point3DIndexMap; /** Points to indexes map. */
 	Triangle3DVector _triangles; /** Triangles of the polygon. */
 };
+
+} // end namespace
 
 #endif // POLYHEDRON_H_INCLUDED

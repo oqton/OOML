@@ -36,6 +36,8 @@
 
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief 3D point primitive object
  *
@@ -238,5 +240,7 @@ protected:
     double _y; /** Point position in the y axis. */
     double _z; /** Point position in the z axis. */
 };
+
+} // end namespace
 
 #endif // POINT3D_H_INCLUDED

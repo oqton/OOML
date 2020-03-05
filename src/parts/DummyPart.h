@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief DummyPart
@@ -91,5 +93,7 @@ protected:
 private:
     Data data;
 };
+
+} // end namespace
 
 #endif // LINK_H_INCLUDED

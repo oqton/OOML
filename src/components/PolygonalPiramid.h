@@ -30,10 +30,12 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
-#include <core/Point2D.h>
-#include <core/Point3D.h>
-#include <core/Polygon.h>
+#include "../core/AbstractPart.h"
+#include "../core/Point2D.h"
+#include "../core/Point3D.h"
+#include "../core/Polygon.h"
+
+namespace ooml {
 
 /**
  * \brief Polygonal base piramid primitive object
@@ -88,5 +90,7 @@ private:
 	Polygon<Point2D> _base; /** Polygonal base of the piramid */
 	Point3D _apex; /** Apex point of the piramid */
 };
+
+} // end namespace
 
 #endif // POLYGONALPIRAMID_H_INCLUDED

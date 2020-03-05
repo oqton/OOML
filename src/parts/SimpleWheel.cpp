@@ -17,9 +17,11 @@
 *
 */
 
-#include <parts/SimpleWheel.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
+#include "SimpleWheel.h"
+#include "../components/Cylinder.h"
+#include "../core/Difference.h"
+
+namespace ooml {
 
 Component SimpleWheel::build()
 {
@@ -27,3 +29,5 @@ Component SimpleWheel::build()
 		- Cylinder(_axeRadius, _thickness + PART_MARGIN,20,false)
 			  .translate(0,0,-PART_MARGIN);
 }
+
+} // end namespace

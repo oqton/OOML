@@ -17,10 +17,12 @@
 *
 */
 
-#include <parts/ServoWheel.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
-#include <parts/SimpleWheel.h>
+#include "ServoWheel.h"
+#include "../components/Cylinder.h"
+#include "../core/Difference.h"
+#include "SimpleWheel.h"
+
+namespace ooml {
 
 Component ServoWheel::build()
 {
@@ -28,3 +30,5 @@ Component ServoWheel::build()
     - Cylinder(_servoRadius, _servoThickness + PART_MARGIN,50,false)
 	 .translate(0, 0, getThickness() - (_servoThickness - PART_MARGIN));
 }
+
+} // end namespace

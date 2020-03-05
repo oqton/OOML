@@ -17,12 +17,16 @@
 *
 */
 
-#include <parts/Link.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
+#include "Link.h"
+#include "../components/Cylinder.h"
+#include "../core/Difference.h"
+
+namespace ooml {
 
 Component Link::build()
 {
 	return Cylinder(_radius, _thickness)
 		- Cylinder(_axeRadius, _thickness + PART_MARGIN);
 }
+
+} // end namespace

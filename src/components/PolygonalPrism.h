@@ -30,10 +30,12 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
-#include <core/Point2D.h>
-#include <core/Polygon.h>
-#include <core/Component2D.h>
+#include "../core/AbstractPart.h"
+#include "../core/Point2D.h"
+#include "../core/Polygon.h"
+#include "../core/Component2D.h"
+
+namespace ooml {
 
 /**
  * \brief Polygonal base prism primitive object
@@ -90,5 +92,7 @@ private:
 	double _height; /** Prism height */
     bool _centered;
 };
+
+} // end namespace
 
 #endif // POLYGONALPRISM_H_INCLUDED

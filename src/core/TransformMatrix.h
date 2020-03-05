@@ -34,6 +34,8 @@
 #include "Matrix.h"
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief Homogeneous Transformation Matrix
  *
@@ -236,5 +238,7 @@ public:
 
 
 };
+
+} // end namespace
 
 #endif

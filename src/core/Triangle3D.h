@@ -30,8 +30,10 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/Point3D.h>
-#include <core/Polygon.h>
+#include "Point3D.h"
+#include "Polygon.h"
+
+namespace ooml {
 
 /**
  * \brief 3D triangle primitive object
@@ -60,5 +62,7 @@ public:
 	 */
 	virtual ~Triangle3D() {}
 };
+
+} // end namespace
 
 #endif // TRIANGLE3D_H_INCLUDED

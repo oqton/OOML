@@ -17,10 +17,12 @@
 *
 */
 
-#include <core/Point2D.h>
-#include <core/IndentWriter.h>
+#include "Point2D.h"
+#include "IndentWriter.h"
 
 #include <iostream>
+
+namespace ooml {
 
 void Point2D::genScad(IndentWriter& writer) const
 {
@@ -31,3 +33,5 @@ void Point2D::printAst(IndentWriter& writer) const
 {
 	writer << "(" << _x << ", " << _y << ")";
 }
+
+} // end namespace

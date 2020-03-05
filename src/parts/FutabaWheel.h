@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <parts/SimpleWheel.h>
+#include "../parts/SimpleWheel.h"
+
+namespace ooml {
 
 /**
  * \brief Futaba wheel primitive object
@@ -94,5 +96,7 @@ private:
         double _thickness; /** Thickness. */
         double _crownType; /** Type of crown. */
 };
+
+} // end namespace
 
 #endif // FUTABAWHEEL_H_INCLUDED

@@ -32,6 +32,8 @@
 
 #include "GenericServo.h"
 
+namespace ooml {
+
 /**
  * \brief Generic Servo Model
  *
@@ -62,5 +64,7 @@ public:
      */
     virtual Component getBackCover();
 };
+
+} // end namespace
 
 #endif // OOML_GENERIC_SERVO_H_INCLUDED

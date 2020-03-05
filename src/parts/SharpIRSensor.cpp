@@ -17,13 +17,15 @@
 *
 */
 
-#include <parts/SharpIRSensor.h>
+#include "SharpIRSensor.h"
 #include <components/Cube.h>
 #include <components/Cylinder.h>
 #include <core/Difference.h>
 #include <components/RoundedTablet.h>
 #include <core/Union.h>
 
+
+namespace ooml {
 
 
 Component SharpIRSensor::build()
@@ -74,3 +76,5 @@ Component SharpIRSensor::build()
 
 	 return ir;
 }
+
+} // end namespace

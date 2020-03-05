@@ -23,6 +23,8 @@
 
 #include <iostream>
 
+namespace ooml {
+
 RefSys RefSys::translate(double x, double y, double z){
     _trans.translate(x,y,z);
     return *this;
@@ -74,3 +76,4 @@ RefSys RefSys::relTransform(TransformMatrix tr){
     return *this;
 }
 
+} // end namespace

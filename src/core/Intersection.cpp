@@ -17,10 +17,12 @@
 *
 */
 
-#include <core/Intersection.h>
-#include <core/IndentWriter.h>
+#include "Intersection.h"
+#include "IndentWriter.h"
 
 #include <iostream>
+
+namespace ooml {
 
 void Intersection::genScad(IndentWriter& writer) const
 {
@@ -47,3 +49,5 @@ Component operator*(Component const& lhs, Component const& rhs)
   result << lhs.get() << rhs.get();
   return result;
 }
+
+} // end namespace

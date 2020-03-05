@@ -30,10 +30,12 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
-#include <core/ObjectDecorator.h>
-#include <core/SharedPtr.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+#include "ObjectDecorator.h"
+#include "SharedPtr.h"
+
+namespace ooml {
 
 /**
  * \brief Scale decorator.
@@ -180,5 +182,7 @@ private:
 	double _sy;	 /** Scale on the y axis. */
 	double _sz;	 /** Scale on the z axis. */
 };
+
+} // end namespace
 
 #endif // SCALEDECORATOR_H_INCLUDED

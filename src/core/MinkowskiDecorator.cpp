@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/MinkowskiDecorator.h>
-#include <core/IndentWriter.h>
+#include "MinkowskiDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void MinkowskiDecorator::genScad(IndentWriter& writer) const
 {
@@ -38,3 +40,5 @@ void MinkowskiDecorator::printAst(IndentWriter& writer) const
 	writer << ", " << _faces << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

@@ -17,11 +17,13 @@
 *
 */
 
-#include <parts/BatteryHolder.h>
-#include <components/Cube.h>
-#include <components/Cylinder.h>
-#include <core/Difference.h>
-#include <core/Union.h>
+#include "BatteryHolder.h"
+#include "../components/Cube.h"
+#include "../components/Cylinder.h"
+#include "../core/Difference.h"
+#include "../core/Union.h"
+
+namespace ooml {
 
 Component BatteryHolder::build()
 {
@@ -60,3 +62,5 @@ Component BatteryHolder::build()
 
   return a.translate(0, 0, 3 + diameter / 2);
 }
+
+} // end namespace

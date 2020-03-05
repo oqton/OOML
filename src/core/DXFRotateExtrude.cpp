@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/DXFRotateExtrude.h>
-#include <core/IndentWriter.h>
+#include "DXFRotateExtrude.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void DXFRotateExtrude::genScad(IndentWriter& writer) const
 {
@@ -29,3 +31,5 @@ void DXFRotateExtrude::printAst(IndentWriter& writer) const
 {
   writer << "// ROTATE_EXTRUDE(" << _DXFFilename << ", " << _convexity << ", " << _faces << ")" << std::endl;
 }
+
+} // end namespace

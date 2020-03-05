@@ -17,10 +17,12 @@
 *
 */
 
-#include <components/Square.h>
-#include <core/IndentWriter.h>
+#include "Square.h"
+#include "../core/IndentWriter.h"
 
 #include <iostream>
+
+namespace ooml {
 
 void Square::genScad(IndentWriter& writer) const
 {
@@ -31,3 +33,5 @@ void Square::printAst(IndentWriter& writer) const
 {
 	writer << "// SQUARE(" << _sx << ", " << _sy << ", " << _center << ")" << std::endl;
 }
+
+} // end namespace

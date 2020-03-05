@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/LinearExtrudeDecorator.h>
-#include <core/IndentWriter.h>
+#include "LinearExtrudeDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void LinearExtrudeDecorator::genScad(IndentWriter& writer) const
 {
@@ -35,3 +37,5 @@ void LinearExtrudeDecorator::printAst(IndentWriter& writer) const
   writer << "// LINEAR_EXTRUDE(" << _height << ", " << _twist << ", " << _faces << ", " << _convexity << ", " << _center << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

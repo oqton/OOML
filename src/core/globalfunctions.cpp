@@ -24,6 +24,10 @@
 #include "Union.h"
 #include "Component.h"
 
+namespace ooml {
+
 Component& attach(Component &base, int link_base, Component & attachment, int link_attach){
     return base.attach(link_base,attachment,link_attach);
 }
+
+} // end namespace

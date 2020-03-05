@@ -30,9 +30,11 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/Component.h>
-#include <core/IndentWriter.h>
+#include "AbstractObject.h"
+#include "Component.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 /**
  * \brief Cube primitive object
@@ -129,5 +131,7 @@ private:
     double _sz; /** Cube dimension in the z axis. */
     bool _center; /** Centered cube flag. */
 };
+
+} // end namespace
 
 #endif // CUBEOBJECT_H_INCLUDED

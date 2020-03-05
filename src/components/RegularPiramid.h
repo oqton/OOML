@@ -30,12 +30,14 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <components/PolygonalPrism.h>
-#include <core/Math.h>
-#include <core/Point2D.h>
-#include <core/Polygon.h>
+#include "PolygonalPrism.h"
+#include "../core/Math.h"
+#include "../core/Point2D.h"
+#include "../core/Polygon.h"
 
 #include <math.h>
+
+namespace ooml {
 
 /**
  * \brief Regular base piramid primitive object
@@ -75,5 +77,7 @@ public:
 		set(PolygonalPrism(base, height).get());
 	}
 };
+
+} // end namespace
 
 #endif // REGULARPIRAMID_H_INCLUDED

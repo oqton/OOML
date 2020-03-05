@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief Simple axe primitive object
@@ -82,5 +84,7 @@ private:
 	double _length; /** Axe length. */
 	double _radius; /** Axe radius. */
 };
+
+} // end namespace
 
 #endif // SIMPLEAXE_H_INCLUDED

@@ -30,9 +30,11 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/Component2D.h>
-#include <core/IndentWriter.h>
+#include "../core/AbstractObject.h"
+#include "../core/Component2D.h"
+#include "../core/IndentWriter.h"
+
+namespace ooml {
 
 /**
  * \brief Square primitive object
@@ -111,5 +113,7 @@ private:
 	double _sy; /** Square dimension in the y axis. */
 	bool _center; /** Centered square flag. */
 };
+
+} // end namespace
 
 #endif // SQUARE_H_INCLUDED

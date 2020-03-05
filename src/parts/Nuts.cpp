@@ -33,6 +33,8 @@
 #include "Nuts.h"
 #include "../components.h"
 
+namespace ooml {
+
 NutShape::NutShape(Metric m, double thickness, double extra):AbstractPart()
 {
     data.dim_margin=extra;
@@ -73,3 +75,5 @@ Component NutShape::build(){
     Component hexnut = Cylinder((data.witdth_across_coners+data.dim_margin)/2 ,data.thickness,6,true);
     return hexnut;
 }
+
+} // end namespace

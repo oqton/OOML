@@ -30,13 +30,15 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/Component.h>
-#include <core/IndentWriter.h>
-#include <core/Point3D.h>
+#include "AbstractObject.h"
+#include "Component.h"
+#include "IndentWriter.h"
+#include "Point3D.h"
 
 #include <algorithm>
 #include <vector>
+
+namespace ooml {
 
 /**
  * \brief Generic polygon primitive object
@@ -177,5 +179,7 @@ void Polygon<T>::printAst(IndentWriter& writer) const
 		it->printAst(writer);
 	writer << "]";
 }
+
+} // end namespace
 
 #endif // POLYGON_H_INCLUDED

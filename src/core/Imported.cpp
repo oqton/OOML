@@ -17,12 +17,14 @@
 *
 */
 
-#include <core/Imported.h>
-#include <core/IndentWriter.h>
+#include "Imported.h"
+#include "IndentWriter.h"
 
 #include <fstream>
 #include <iostream>
 #include <string>
+
+namespace ooml {
 
 SharedPtr<AbstractObject> Imported::create(std::string const& filename)
 {
@@ -68,3 +70,5 @@ void Imported::printAst(IndentWriter& writer) const
 {
 	writer << "IMPORTED()" << std::endl;
 }
+
+} // end namespace

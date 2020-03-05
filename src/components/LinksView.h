@@ -38,6 +38,8 @@
 
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief 3D point primitive object
  *
@@ -89,5 +91,7 @@ private:
   Links _links;
   Component genComponent();
 };
+
+} // end namespace
 
 #endif // OOML_LINKSWIEW_H_INCLUDED

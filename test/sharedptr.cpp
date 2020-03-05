@@ -1,5 +1,7 @@
 ﻿#include <core/SharedPtr.h>
 
+using namespace ooml;
+
 int main(int argc, char **argv)
 {
   SharedPtr<int> b(new int(4));

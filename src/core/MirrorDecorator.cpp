@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/MirrorDecorator.h>
-#include <core/IndentWriter.h>
+#include "MirrorDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void MirrorDecorator::genScad(IndentWriter& writer) const
 {
@@ -35,3 +37,5 @@ void MirrorDecorator::printAst(IndentWriter& writer) const
 	writer << "MIRROR(" << _vx << ", " << _vy << ", " << _vz << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

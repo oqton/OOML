@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/ColorDecorator.h>
-#include <core/IndentWriter.h>
+#include "ColorDecorator.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void ColorDecorator::genScad(IndentWriter& writer) const
 {
@@ -35,3 +37,5 @@ void ColorDecorator::printAst(IndentWriter& writer) const
 	writer << "Color(" << _r << ", " << _g << ", " << _b << ", " << _a << ")" << std::endl;
 	ObjectDecorator::printAst(writer);
 }
+
+} // end namespace

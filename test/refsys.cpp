@@ -5,6 +5,8 @@
 #include <iostream>
 #include <fstream>
 
+using namespace ooml;
+
 int main(int argc, char **argv)
 {
     std::ofstream file("refsys.scad");

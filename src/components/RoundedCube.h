@@ -30,10 +30,12 @@
 #define OOMLComponents_EXP_DEC
 #endif
 
-#include <components/Cube.h>
-#include <components/Cylinder.h>
-#include <components/Sphere.h>
-#include <core/Union.h>
+#include "Cube.h"
+#include "Cylinder.h"
+#include "Sphere.h"
+#include "../core/Union.h"
+
+namespace ooml {
 
 /**
  * \brief Rounded cube primitive object
@@ -118,5 +120,7 @@ public:
     set(round_cube.get());
 	}
 };
+
+} // end namespace
 
 #endif // ROUNDEDCUBE_H_INCLUDED

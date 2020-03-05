@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/DXFLinearExtrude.h>
-#include <core/IndentWriter.h>
+#include "DXFLinearExtrude.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void DXFLinearExtrude::genScad(IndentWriter& writer) const
 {
@@ -29,3 +31,5 @@ void DXFLinearExtrude::printAst(IndentWriter& writer) const
 {
   writer << "// LINEAR_EXTRUDE("<< _height << ", " << _twist << ", " << _faces << ", " << _convexity << ", " << _center << "){" << _DXFFilename << "};" << std::endl;
 }
+
+} // end namespace

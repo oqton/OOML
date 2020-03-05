@@ -30,8 +30,10 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
-#include <components/Sphere.h>
+#include "../core/AbstractPart.h"
+#include "../components/Sphere.h"
+
+namespace ooml {
 
 /**
  * \brief Ball Wheel Holder primitive object
@@ -124,5 +126,7 @@ protected:
 
 private:
 };
+
+} // end namespace
 
 #endif // SIMPLEWHEELdata.Hdata.INCLUDED

@@ -17,12 +17,16 @@
 *
 */
 
-#include <parts/DummyPart.h>
-#include <components/Cube.h>
+#include "DummyPart.h"
+#include "../components/Cube.h"
 
+
+namespace ooml {
 
 Component DummyPart::build()
 {
     Component part = Cube(data.sx,data.sy,data.sz);
     return part;
 }
+
+} // end namespace

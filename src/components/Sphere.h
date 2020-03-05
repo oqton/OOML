@@ -34,6 +34,8 @@
 #include "../core/IndentWriter.h"
 #include "../core/SphereObject.h"
 
+namespace ooml {
+
 /**
  * \brief Sphere primitive object
  *
@@ -97,5 +99,7 @@ private:
 	bool _center; /** Centered cylinder flag. */
 };
 
+
+} // end namespace
 
 #endif // SPHERE_H_INCLUDED

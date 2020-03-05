@@ -33,6 +33,8 @@
 #include <math.h>
 #include <utility>
 
+namespace ooml {
+
 /**
  * \brief Translation Vector
  *
@@ -78,5 +80,7 @@ public:
 
 
 };
+
+} // end namespace
 
 #endif // TRANSLATION_H_INCLUDED

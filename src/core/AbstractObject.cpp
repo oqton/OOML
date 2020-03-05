@@ -17,13 +17,16 @@
 *
 */
 
-#include <core/AbstractObject.h>
+#include "AbstractObject.h"
+
+namespace ooml {
 
 bool AbstractObject::_debugFlag = false;
-
 
 IndentWriter& operator<<(IndentWriter & writer, AbstractObject const& object)
 {
 	object.genScad(writer);
 	return writer;
 }
+
+} // end namespace

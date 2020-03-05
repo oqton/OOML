@@ -30,12 +30,14 @@
 #define OOMLCore_EXP_DEC
 #endif
 
-#include <core/AbstractObject.h>
-#include <core/IndentWriter.h>
-#include <core/SharedPtr.h>
+#include "AbstractObject.h"
+#include "IndentWriter.h"
+#include "SharedPtr.h"
 
 #include <string>
 #include <exception>
+
+namespace ooml {
 
 /**
  * \brief Import error exception.
@@ -129,5 +131,7 @@ private:
 	std::string _filename; /** Filename to import into component. */
   std::string _scadCode; /** SCAD code of component. */
 };
+
+} // end namespace
 
 #endif // IMPORTED_H_INCLUDED

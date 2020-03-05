@@ -17,8 +17,10 @@
 *
 */
 
-#include <core/CompositeObject.h>
-#include <core/IndentWriter.h>
+#include "CompositeObject.h"
+#include "IndentWriter.h"
+
+namespace ooml {
 
 void CompositeObject::genScad(IndentWriter& writer) const
 {
@@ -63,3 +65,5 @@ RefSys CompositeObject::getLink(int i) const {
         return _children[0]->getLink(i);
     }
 }
+
+} // end namespace

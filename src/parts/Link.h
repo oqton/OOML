@@ -30,7 +30,9 @@
 #define OOMLParts_EXP_DEC
 #endif
 
-#include <core/AbstractPart.h>
+#include "../core/AbstractPart.h"
+
+namespace ooml {
 
 /**
  * \brief link primitive object
@@ -88,5 +90,7 @@ private:
 	double _axeRadius; /** Wheel's axe radius. */
 	double _thickness; /** Wheel thickness. */
 };
+
+} // end namespace
 
 #endif // LINK_H_INCLUDED
