@@ -25,11 +25,11 @@ include_directories(${OOML_SRC_DIR})
 link_directories(${OOML_LIB_DIR})
 
 # Installation paths.
-if (WIN32)
-	set(CMAKE_INSTALL_PREFIX "${OOML_TRUNK_DIR}")
-else(WIN32)
-	set(CMAKE_INSTALL_PREFIX "/usr/")
-endif(WIN32)
+#if (WIN32)
+	#set(CMAKE_INSTALL_PREFIX "${OOML_TRUNK_DIR}")
+#else(WIN32)
+	#set(CMAKE_INSTALL_PREFIX "/usr/")
+#endif(WIN32)
 
 # Build flags.
 if (NOT WIN32)
@@ -38,7 +38,8 @@ if (NOT WIN32)
 endif(NOT WIN32)
 
 # Build type.
-set(CMAKE_BUILD_TYPE "Debug")
+# set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_MACOSX_RPATH 1)
 
 #Create Config File
 configure_file( ${OOML_SRC_DIR}/config.h.in ${OOML_SRC_DIR}/config.h )
